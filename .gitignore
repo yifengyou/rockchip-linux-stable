@@ -194,3 +194,11 @@ sphinx_*/
 
 # bc language scripts (not LLVM bitcode)
 !kernel/time/timeconst.bc
+
+# kdev
+/kernel-devel/
+/kernel-headers/
+/kos-debug/
+/kos/
+/release/
+
