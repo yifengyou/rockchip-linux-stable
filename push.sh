@@ -20,5 +20,6 @@ ${SSH_CMD} md5sum "${REMOTE_DIR}/*"
 ${SSH_CMD}   rm -rf /lib/modules/7.*
 ${RSYNC_CMD} kos/lib/modules/*           "${TARGET_USER}@${TARGET_IP}:/lib/modules/"
 
+${SSH_CMD} sync
 ${SSH_CMD} tree "/boot"
 
