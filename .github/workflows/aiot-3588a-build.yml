@@ -1,9 +1,9 @@
-name: AIoT 3588IED Build
+name: AIoT 3588A Build
 
 on:
   push:
     branches:
-      - aiot-3588ied
+      - aiot-3588a
   repository_dispatch:
   workflow_dispatch:
 
@@ -85,14 +85,14 @@ jobs:
       - name: Upload to Release
         uses: ncipollo/release-action@main
         with:
-          tag: aiot-3588ied
+          tag: aiot-3588a
           artifacts: /builder/release/*
           allowUpdates: true
           removeArtifacts: false
           replacesArtifacts: true
           token: ${{ secrets.GITHUB_TOKEN }}
           body: |
-            # 视美泰 AIoT-3588IED linux-stable 内核镜像
+            # 视美泰 AIoT-3588A linux-stable 内核镜像
 
             ## 免责声明
             #
